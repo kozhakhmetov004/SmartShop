@@ -19,7 +19,7 @@ public class ShareListServlet extends HttpServlet {
         String shareUsername = request.getParameter("shareUsername");
         String listUuid = request.getParameter("listUuid");
 
-        String jdbcURL = "jdbc:mysql://mysql.railway.internal:3306/railway";
+        String jdbcURL = "jdbc:mysql://localhost:3306/smartshop";
         String dbUser = "root";
         String dbPassword = "";
 

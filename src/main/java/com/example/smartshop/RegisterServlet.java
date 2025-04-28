@@ -13,7 +13,7 @@ public class RegisterServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        String jdbcURL = "jdbc:mysql://mysql.railway.internal:3306/railway";
+        String jdbcURL = "jdbc:mysql://localhost:3306/smartshop";
         String dbUser = "root";
         String dbPassword = "";
 

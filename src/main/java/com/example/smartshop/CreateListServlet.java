@@ -20,7 +20,7 @@ public class CreateListServlet extends HttpServlet {
         int userId = (int) session.getAttribute("userId");
         String listName = request.getParameter("listName");
 
-        String jdbcURL = "jdbc:mysql://mysql.railway.internal:3306/railway";
+        String jdbcURL = "jdbc:mysql://localhost:3306/smartshop";
         String dbUser = "root";
         String dbPassword = "";
 
