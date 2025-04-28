@@ -111,5 +111,46 @@ If you manually change the UUID in the URL and it doesn't exist, you will be red
 Sessions are used to restrict access to authenticated users.
 Incorrect login attempts will trigger a friendly alert indicating a wrong username/password.
 
+The development of SmartShop followed several key stages:
+1)Planning:
+Defining the core functionalities: creating shopping lists, sharing lists via links, and managing user permissions.
+Designing the basic database schema and entity relationships.
+2)Database Design:
+Created tables users, lists, items, and list_permissions to manage authentication and access control.
+Used foreign keys to ensure data integrity.
+3)Backend Implementation:
+Developed servlets for login, registration, list creation/editing, and handling shared UUID links.
+4)Frontend Development:
+Built simple and clean web forms without modern JavaScript frameworks, focusing on server-side data processing.
+5)Testing and Debugging:
+Tested various user scenarios, including invalid links, incorrect login attempts, and session management.
+
+Unique Approaches and Methodologies
+1)UUID-based Sharing:
+Instead of using simple numeric IDs, the app uses UUIDs to securely and uniquely identify shared lists.
+2)Role-based Access Control:
+Only the list owner can grant editing permissions to other users.
+3)Session-based Security:
+Every request checks for an authenticated session, protecting user data.
+4)Fail-safe Redirects:
+Attempts to access non-existent lists automatically redirect users to the homepage.
+
+Known Bugs and Limitations
+1)No password recovery feature; if a user forgets their password, it can only be reset manually via the database.
+2)Potential performance issues with very large lists (pagination is not implemented yet).
+
+Why This Tech Stack Was Chosen
+1)Java EE + Servlets:
+Focused on understanding the fundamentals of web application architecture by working directly with HTTP requests and sessions.
+2)MySQL:
+A stable, widely-used relational database that's easy to integrate and manage.
+3)Apache Tomcat:
+A reliable and lightweight servlet container that's perfect for Java web apps in early development stages.
+4)XAMPP:
+Simplifies local server and database management, allowing faster development and testing.
+
+I genuinely enjoy building web development projects using Java EE and MySQL.
+These technologies are easy to work with, highly reliable, and form the main tech stack that I focus on mastering.
+
 Contact
 If you have questions or find any issues, feel free to open an issue or contact me at sherkhan.kozhakhmetov@nu.edu.kz.
