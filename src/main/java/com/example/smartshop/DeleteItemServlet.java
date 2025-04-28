@@ -14,7 +14,7 @@ public class DeleteItemServlet extends HttpServlet {
         int itemId = Integer.parseInt(request.getParameter("itemId"));
         String listUuid = request.getParameter("listUuid"); // <-- get from form
 
-        String jdbcURL = "jdbc:mysql://localhost:3306/smartshop";
+        String jdbcURL = "jdbc:mysql://mysql.railway.internal:3306/railway";
         String dbUser = "root";
         String dbPassword = "";
 

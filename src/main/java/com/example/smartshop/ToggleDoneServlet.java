@@ -14,7 +14,7 @@ public class ToggleDoneServlet extends HttpServlet {
         int itemId = Integer.parseInt(request.getParameter("itemId"));
         boolean done = request.getParameter("done") != null;
 
-        String jdbcURL = "jdbc:mysql://localhost:3306/smartshop";
+        String jdbcURL = "jdbc:mysql://mysql.railway.internal:3306/railway";
         String dbUser = "root";
         String dbPassword = "";
 

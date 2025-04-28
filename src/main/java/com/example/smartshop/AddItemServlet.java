@@ -20,7 +20,7 @@ public class AddItemServlet extends HttpServlet {
         int quantity = Integer.parseInt(request.getParameter("quantity"));
         String listUuid = request.getParameter("listUuid"); // <-- from form (hidden input)
 
-        String jdbcURL = "jdbc:mysql://localhost:3306/smartshop";
+        String jdbcURL = "jdbc:mysql://mysql.railway.internal:3306/railway";
         String dbUser = "root";
         String dbPassword = "";
 

@@ -10,7 +10,7 @@
         return;
     }
 
-    String jdbcURL = "jdbc:mysql://localhost:3306/smartshop";
+    String jdbcURL = "jdbc:mysql://mysql.railway.internal:3306/railway";
     String dbUser = "root";
     String dbPassword = "";
 
